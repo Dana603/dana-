@@ -1,69 +1,278 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SO SO Matcha & Cinnabon | ماتشا سوسو</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;750;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Matcha & Cinnabon Soso</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-    <!-- Header / Navbar -->
-    <header class="navbar">
-        <div class="logo">SO SO <span>Matcha</span></div>
-        <nav>
-            <a href="#home">الرئيسية</a>
-            <a href="#menu">القائمة</a>
-            <a href="#about">قصتنا</a>
-            <a href="#reviews">الآراء</a>
-        </nav>
-        <div class="nav-icons">
-            <a href="#" id="wishlist-btn"><i class="fa-regular fa-heart"></i> <span class="badge">0</span></a>
-            <a href="#" id="cart-btn"><i class="fa-solid fa-bag-shopping"></i> <span class="badge">0</span></a>
-        </div>
-    </header>
+<header class="header">
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>فخامة الماتشا مع ألذ سينابون</h1>
-            <p>تجربة استثنائية تجمع بين نكهة ماتشا سوسو الأصلية وحلاوة Pecan Cinnabon الطازجة.</p>
-            <a href="#menu" class="btn-primary">اكتشف القائمة</a>
-        </div>
-    </section>
+<div class="logo">
 
-    <!-- Menu / Products -->
-    <section id="menu" class="menu-section">
-        <h2 class="section-title">قائمة السعادة</h2>
-        <div class="product-grid">
-            <div class="card">
-                <div class="card-img matcha-bg">🍵</div>
-                <h3>ماتشا سوسو المثلجة</h3>
-                <p class="price">28 ر.س</p>
-                <button class="btn-add">إضافة للسلة</button>
-            </div>
-            <div class="card">
-                <div class="card-img cin-bg">🧁</div>
-                <h3>بيكان سينابون الفاخر</h3>
-                <p class="price">24 ر.س</p>
-                <button class="btn-add">إضافة للسلة</button>
-            </div>
-            <div class="card">
-                <div class="card-img combo-bg">✨</div>
-                <h3>بوكس سوسو المزدوج</h3>
-                <p class="price">48 ر.س</p>
-                <button class="btn-add">إضافة للسلة</button>
-            </div>
-        </div>
-    </section>
+🍵 Matcha & Cinnabon Soso
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 SO SO Matcha & Cinnabon. جميع الحقوق محفوظة.</p>
-    </footer>
+</div>
 
-    <script src="script.js"></script>
+<nav>
+
+<a href="#">الرئيسية</a>
+
+<a href="#matcha">الماتشا</a>
+
+<a href="#cinnabon">السينابون</a>
+
+<a href="#about">من نحن</a>
+
+<a href="#contact">تواصل</a>
+
+</nav>
+
+<div class="header-icons">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<i class="fa-regular fa-heart"></i>
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Fresh Matcha
+<br>
+
+Fresh Cinnabon
+
+</h1>
+
+<p>
+
+Crafted With Love 💚
+
+</p>
+
+<a href="#matcha" class="btn">
+
+اطلب الآن
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="background.jpg">
+
+</div>
+
+</section>
+
+<section id="matcha">
+
+<h2>
+
+🍵 Matcha Menu
+
+</h2>
+
+<div class="products">
+  <!-- Classic Matcha -->
+<div class="card">
+
+    <img src="matcha1.jpg" alt="Classic Matcha">
+
+    <div class="card-body">
+
+        <h3>Classic Matcha</h3>
+
+        <p class="price">22 SAR</p>
+
+        <p class="desc">كلاسيك ماتشا بالحليب الطازج.</p>
+
+        <button onclick="addToCart('Classic Matcha',22)">
+            🛒 أضف للسلة
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Strawberry Matcha -->
+<div class="card">
+
+    <img src="matcha2.jpg" alt="Strawberry Matcha">
+
+    <div class="card-body">
+
+        <h3>Strawberry Matcha</h3>
+
+        <p class="price">26 SAR</p>
+
+        <p class="desc">ماتشا مع فراولة طازجة.</p>
+
+        <button onclick="addToCart('Strawberry Matcha',26)">
+            🛒 أضف للسلة
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Spanish Matcha -->
+<div class="card">
+
+    <img src="matcha3.jpg" alt="Spanish Matcha">
+
+    <div class="card-body">
+
+        <h3>Spanish Matcha</h3>
+
+        <p class="price">27 SAR</p>
+
+        <p class="desc">سبانش لاتيه بالماتشا.</p>
+
+        <button onclick="addToCart('Spanish Matcha',27)">
+            🛒 أضف للسلة
+        </button>
+
+    </div>
+
+</div>  
+</div>
+
+</section>
+
+<!-- ===== CINNABON ===== -->
+
+<section id="cinnabon">
+
+<h2>🥐 Cinnabon Menu</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="classic.jpg" alt="Classic Cinnabon">
+
+<div class="card-body">
+
+<h3>Classic Cinnabon</h3>
+
+<p class="price">18 SAR</p>
+
+<p class="desc">سينابون كلاسيك طازج مع صوص الجبن.</p>
+
+<button onclick="addToCart('Classic Cinnabon',18)">
+🛒 أضف للسلة
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="pecan.jpg" alt="Pecan Cinnabon">
+
+<div class="card-body">
+
+<h3>Pecan Cinnabon</h3>
+
+<p class="price">22 SAR</p>
+
+<p class="desc">سينابون بالبقان وصوص الكراميل.</p>
+
+<button onclick="addToCart('Pecan Cinnabon',22)">
+🛒 أضف للسلة
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="lotus.jpg" alt="Lotus Cinnabon">
+
+<div class="card-body">
+
+<h3>Lotus Cinnabon</h3>
+
+<p class="price">24 SAR</p>
+
+<p class="desc">سينابون محشو بكريمة اللوتس.</p>
+
+<button onclick="addToCart('Lotus Cinnabon',24)">
+🛒 أضف للسلة
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>من نحن</h2>
+
+<p class="about">
+
+نقدم ألذ مشروبات الماتشا وأشهى السينابون الطازج يومياً 💚
+
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>تواصل معنا</h2>
+
+<p>📍 جدة - المملكة العربية السعودية</p>
+
+<p>📞 0500000000</p>
+
+<p>📧 matchasoso@gmail.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Matcha & Cinnabon Soso</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
